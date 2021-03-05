@@ -5,6 +5,7 @@ import LoginUseReducer from './LoginUseReducer';
 import LoginUseReducerImmer from './LoginUseReducerImmer';
 import LoginWithContext from './LoginWithContext';
 import LoginUseReducerTypeScript from './LoginUseReducerTypeScript';
+import LoginWithContextTypescript from './LoginWithContextTypescript';
 
 function useLocationHash() {
   const [hash, setHash] = useState(window.location.hash);
@@ -35,6 +36,7 @@ function App() {
     useReducerImmer: LoginUseReducerImmer,
     withContext: LoginWithContext,
     useReducerTypeScript: LoginUseReducerTypeScript,
+    withContextTypeScript: LoginWithContextTypescript,
   });
   return (
     <>
@@ -53,6 +55,9 @@ function App() {
           <br />
           <br />
           <a href='#useReducerTypeScript'>LoginUseReducerTypeScript</a>
+          <br />
+          <br />
+          <a href='#withContextTypeScript'>LoginWithContextTypeScript</a>
         </div>
       )}
       {CurrentRoute && <CurrentRoute />}
